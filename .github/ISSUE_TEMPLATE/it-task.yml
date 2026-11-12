@@ -1,0 +1,83 @@
+name: "IT Software - Task"
+description: "Track a unit of work."
+title: "[IT][Task]: "
+labels: ["task"]
+projects: ["plugzmart-official/14"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **IT Software Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: description
+    attributes:
+      label: "Task description"
+      description: "What needs to be done and why?"
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: "Definition of done"
+      description: "Checklist of what completes this task."
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: input
+    id: app_name
+    attributes:
+      label: "App / service name"
+      description: "Application or service involved."
+      placeholder: "e.g. plugzmart-portal"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Where this work happens."
+      options:
+        - "Production"
+        - "Staging"
+        - "Development"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps / plan"
+      description: "Steps to carry out or reproduce the situation."
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How important is this?"
+      options:
+        - "Urgent"
+        - "High"
+        - "Medium"
+        - "Low"
+      default: 2
+    validations:
+      required: true
+  - type: input
+    id: target_date
+    attributes:
+      label: "Target date"
+      description: "Desired completion date (optional)."
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context"
+      description: "Links, references, dependencies."
+    validations:
+      required: false

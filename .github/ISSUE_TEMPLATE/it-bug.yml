@@ -1,0 +1,79 @@
+name: "IT Software - Bug Report"
+description: "Report something that is broken or behaving unexpectedly."
+title: "[IT][Bug]: "
+labels: ["bug"]
+projects: ["plugzmart-official/14"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **IT Software Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: summary
+    attributes:
+      label: "What happened?"
+      description: "Clear description of the problem."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior"
+      description: "What should have happened?"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behavior"
+      description: "What happened instead?"
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      description: "How badly does this affect work?"
+      options:
+        - "Critical - blocks work / safety risk"
+        - "High - major impact"
+        - "Medium - workaround exists"
+        - "Low - minor / cosmetic"
+    validations:
+      required: true
+  - type: input
+    id: app_name
+    attributes:
+      label: "App / service name"
+      description: "Application or service affected."
+      placeholder: "e.g. plugzmart-portal"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Where this occurs."
+      options:
+        - "Production"
+        - "Staging"
+        - "Development"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "Numbered steps starting from a clean state."
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "Screenshots / attachments"
+      description: "Drag and drop images, files, or extra context here."
+    validations:
+      required: false

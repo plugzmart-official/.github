@@ -1,0 +1,73 @@
+name: "Hardware Design - Bug Report"
+description: "Report something that is broken or behaving unexpectedly."
+title: "[Hardware][Bug]: "
+labels: ["bug"]
+projects: ["plugzmart-official/13"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **Hardware Design Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: summary
+    attributes:
+      label: "What happened?"
+      description: "Clear description of the problem."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior"
+      description: "What should have happened?"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behavior"
+      description: "What happened instead?"
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      description: "How badly does this affect work?"
+      options:
+        - "Critical - blocks work / safety risk"
+        - "High - major impact"
+        - "Medium - workaround exists"
+        - "Low - minor / cosmetic"
+    validations:
+      required: true
+  - type: input
+    id: pcb_revision
+    attributes:
+      label: "PCB revision"
+      description: "Board name and revision."
+      placeholder: "e.g. PZ-MAIN Rev B"
+    validations:
+      required: true
+  - type: input
+    id: schematic_ref
+    attributes:
+      label: "Schematic sheet / component reference"
+      description: "Sheet name and reference designators."
+      placeholder: "e.g. Power.SchDoc, U3, R12"
+    validations:
+      required: true
+  - type: textarea
+    id: test_notes
+    attributes:
+      label: "Test / measurement notes"
+      description: "Equipment, setup, measured vs expected values, scope captures."
+      placeholder: "e.g. 3V3 rail measured 3.05 V under load (expected 3.30 V)"
+    validations:
+      required: false
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "Screenshots / attachments"
+      description: "Drag and drop images, files, or extra context here."
+    validations:
+      required: false

@@ -1,0 +1,79 @@
+name: "Mechanical Design - Bug Report"
+description: "Report something that is broken or behaving unexpectedly."
+title: "[Mech][Bug]: "
+labels: ["bug"]
+projects: ["plugzmart-official/12"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **Mechanical Design Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: summary
+    attributes:
+      label: "What happened?"
+      description: "Clear description of the problem."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior"
+      description: "What should have happened?"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behavior"
+      description: "What happened instead?"
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      description: "How badly does this affect work?"
+      options:
+        - "Critical - blocks work / safety risk"
+        - "High - major impact"
+        - "Medium - workaround exists"
+        - "Low - minor / cosmetic"
+    validations:
+      required: true
+  - type: input
+    id: cad_part_number
+    attributes:
+      label: "CAD assembly / part number"
+      description: "Assembly or part number and file name."
+      placeholder: "e.g. ASM-1042 / PN-20931"
+    validations:
+      required: true
+  - type: textarea
+    id: material_tolerance
+    attributes:
+      label: "Material / tolerance notes"
+      description: "Material, finish, and the tolerance involved (GD&T if relevant)."
+      placeholder: "e.g. AL6061-T6, hole 8.00 +0.05/-0.00 mm"
+    validations:
+      required: false
+  - type: dropdown
+    id: revision_stage
+    attributes:
+      label: "Revision stage"
+      description: "Current design stage."
+      options:
+        - "Concept"
+        - "Prototype"
+        - "EVT"
+        - "DVT"
+        - "PVT"
+        - "Production"
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "Screenshots / attachments"
+      description: "Drag and drop images, files, or extra context here."
+    validations:
+      required: false

@@ -1,0 +1,78 @@
+name: "Embedded - Task"
+description: "Track a unit of work."
+title: "[Embedded][Task]: "
+labels: ["task"]
+projects: ["plugzmart-official/11"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **Embedded Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: description
+    attributes:
+      label: "Task description"
+      description: "What needs to be done and why?"
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: "Definition of done"
+      description: "Checklist of what completes this task."
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: input
+    id: firmware_version
+    attributes:
+      label: "Firmware version"
+      description: "Version or branch this task relates to."
+      placeholder: "e.g. v1.4.2 / develop"
+    validations:
+      required: false
+  - type: input
+    id: board_revision
+    attributes:
+      label: "Microcontroller / board revision"
+      description: "Hardware this applies to."
+      placeholder: "e.g. STM32F407, Rev C"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs / serial output (optional)"
+      description: "Any relevant output."
+      render: "shell"
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How important is this?"
+      options:
+        - "Urgent"
+        - "High"
+        - "Medium"
+        - "Low"
+      default: 2
+    validations:
+      required: true
+  - type: input
+    id: target_date
+    attributes:
+      label: "Target date"
+      description: "Desired completion date (optional)."
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context"
+      description: "Links, references, dependencies."
+    validations:
+      required: false

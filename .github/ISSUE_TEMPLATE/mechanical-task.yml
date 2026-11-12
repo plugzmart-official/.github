@@ -1,0 +1,84 @@
+name: "Mechanical Design - Task"
+description: "Track a unit of work."
+title: "[Mech][Task]: "
+labels: ["task"]
+projects: ["plugzmart-official/12"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **Mechanical Design Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: description
+    attributes:
+      label: "Task description"
+      description: "What needs to be done and why?"
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: "Definition of done"
+      description: "Checklist of what completes this task."
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: input
+    id: cad_part_number
+    attributes:
+      label: "CAD assembly / part number"
+      description: "Assembly or part number affected."
+      placeholder: "e.g. ASM-1042 / PN-20931"
+    validations:
+      required: false
+  - type: textarea
+    id: material_tolerance
+    attributes:
+      label: "Material / tolerance notes"
+      description: "Material, finish, and tolerance notes."
+      placeholder: "e.g. AL6061-T6, anodized"
+    validations:
+      required: false
+  - type: dropdown
+    id: revision_stage
+    attributes:
+      label: "Revision stage"
+      description: "Design stage."
+      options:
+        - "Concept"
+        - "Prototype"
+        - "EVT"
+        - "DVT"
+        - "PVT"
+        - "Production"
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How important is this?"
+      options:
+        - "Urgent"
+        - "High"
+        - "Medium"
+        - "Low"
+      default: 2
+    validations:
+      required: true
+  - type: input
+    id: target_date
+    attributes:
+      label: "Target date"
+      description: "Desired completion date (optional)."
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context"
+      description: "Links, references, dependencies."
+    validations:
+      required: false

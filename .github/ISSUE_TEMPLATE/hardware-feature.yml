@@ -1,0 +1,77 @@
+name: "Hardware Design - Feature Request"
+description: "Propose a new capability or improvement."
+title: "[Hardware][Feature]: "
+labels: ["enhancement"]
+projects: ["plugzmart-official/13"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **Hardware Design Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / motivation"
+      description: "What problem does this solve? Who benefits?"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed solution"
+      description: "Describe what you would like to see."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria"
+      description: "How do we know it's done?"
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false
+  - type: input
+    id: pcb_revision
+    attributes:
+      label: "PCB revision"
+      description: "Board name and revision this targets."
+      placeholder: "e.g. PZ-MAIN Rev C"
+    validations:
+      required: false
+  - type: input
+    id: schematic_ref
+    attributes:
+      label: "Schematic sheet / component reference"
+      description: "Sheet and reference designators affected."
+      placeholder: "e.g. Power.SchDoc, U3"
+    validations:
+      required: false
+  - type: textarea
+    id: test_notes
+    attributes:
+      label: "Test / measurement notes"
+      description: "How this will be verified, target specs."
+      placeholder: "e.g. Ripple < 50 mVpp at 2 A"
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How important is this?"
+      options:
+        - "Urgent"
+        - "High"
+        - "Medium"
+        - "Low"
+      default: 2
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context"
+      description: "Links, references, mockups, alternatives considered."
+    validations:
+      required: false

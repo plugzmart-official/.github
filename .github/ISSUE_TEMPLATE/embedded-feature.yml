@@ -1,0 +1,77 @@
+name: "Embedded - Feature Request"
+description: "Propose a new capability or improvement."
+title: "[Embedded][Feature]: "
+labels: ["enhancement"]
+projects: ["plugzmart-official/11"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **Embedded Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / motivation"
+      description: "What problem does this solve? Who benefits?"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed solution"
+      description: "Describe what you would like to see."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria"
+      description: "How do we know it's done?"
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false
+  - type: input
+    id: firmware_version
+    attributes:
+      label: "Target firmware version"
+      description: "Release this should land in, if known."
+      placeholder: "e.g. v1.5.0"
+    validations:
+      required: false
+  - type: input
+    id: board_revision
+    attributes:
+      label: "Microcontroller / board revision"
+      description: "Hardware this applies to."
+      placeholder: "e.g. STM32F407, Rev C"
+    validations:
+      required: false
+  - type: textarea
+    id: resources
+    attributes:
+      label: "Resource constraints"
+      description: "Expected flash / RAM / timing / power impact."
+      placeholder: "e.g. < 8 KB flash, 1 ms ISR budget"
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How important is this?"
+      options:
+        - "Urgent"
+        - "High"
+        - "Medium"
+        - "Low"
+      default: 2
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context"
+      description: "Links, references, mockups, alternatives considered."
+    validations:
+      required: false

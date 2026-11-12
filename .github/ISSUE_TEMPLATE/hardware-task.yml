@@ -1,0 +1,77 @@
+name: "Hardware Design - Task"
+description: "Track a unit of work."
+title: "[Hardware][Task]: "
+labels: ["task"]
+projects: ["plugzmart-official/13"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **Hardware Design Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: description
+    attributes:
+      label: "Task description"
+      description: "What needs to be done and why?"
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: "Definition of done"
+      description: "Checklist of what completes this task."
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: input
+    id: pcb_revision
+    attributes:
+      label: "PCB revision"
+      description: "Board name and revision."
+      placeholder: "e.g. PZ-MAIN Rev B"
+    validations:
+      required: false
+  - type: input
+    id: schematic_ref
+    attributes:
+      label: "Schematic sheet / component reference"
+      description: "Sheet and reference designators involved."
+      placeholder: "e.g. Power.SchDoc, U3, R12"
+    validations:
+      required: false
+  - type: textarea
+    id: test_notes
+    attributes:
+      label: "Test / measurement notes"
+      description: "Test setup or measurements needed."
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How important is this?"
+      options:
+        - "Urgent"
+        - "High"
+        - "Medium"
+        - "Low"
+      default: 2
+    validations:
+      required: true
+  - type: input
+    id: target_date
+    attributes:
+      label: "Target date"
+      description: "Desired completion date (optional)."
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context"
+      description: "Links, references, dependencies."
+    validations:
+      required: false

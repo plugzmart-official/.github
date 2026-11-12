@@ -1,0 +1,82 @@
+name: "IT Software - Feature Request"
+description: "Propose a new capability or improvement."
+title: "[IT][Feature]: "
+labels: ["enhancement"]
+projects: ["plugzmart-official/14"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **IT Software Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / motivation"
+      description: "What problem does this solve? Who benefits?"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed solution"
+      description: "Describe what you would like to see."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria"
+      description: "How do we know it's done?"
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false
+  - type: input
+    id: app_name
+    attributes:
+      label: "App / service name"
+      description: "Application or service this applies to."
+      placeholder: "e.g. plugzmart-portal"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Target environment"
+      description: "Where this should first roll out."
+      options:
+        - "Production"
+        - "Staging"
+        - "Development"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Example workflow / user steps"
+      description: "How a user would use this, step by step."
+      placeholder: |
+        1. User opens ...
+        2. User clicks ...
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How important is this?"
+      options:
+        - "Urgent"
+        - "High"
+        - "Medium"
+        - "Low"
+      default: 2
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context"
+      description: "Links, references, mockups, alternatives considered."
+    validations:
+      required: false

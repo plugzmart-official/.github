@@ -1,0 +1,83 @@
+name: "Mechanical Design - Feature Request"
+description: "Propose a new capability or improvement."
+title: "[Mech][Feature]: "
+labels: ["enhancement"]
+projects: ["plugzmart-official/12"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for filing this with the **Mechanical Design Team**. This issue is added to the team project automatically."
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / motivation"
+      description: "What problem does this solve? Who benefits?"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed solution"
+      description: "Describe what you would like to see."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria"
+      description: "How do we know it's done?"
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false
+  - type: input
+    id: cad_part_number
+    attributes:
+      label: "CAD assembly / part number"
+      description: "Assembly or part number affected."
+      placeholder: "e.g. ASM-1042 / PN-20931"
+    validations:
+      required: false
+  - type: textarea
+    id: material_tolerance
+    attributes:
+      label: "Material / tolerance notes"
+      description: "Material, finish, and tolerance requirements."
+      placeholder: "e.g. PA12 nylon, +/-0.1 mm"
+    validations:
+      required: false
+  - type: dropdown
+    id: revision_stage
+    attributes:
+      label: "Revision stage"
+      description: "Design stage this targets."
+      options:
+        - "Concept"
+        - "Prototype"
+        - "EVT"
+        - "DVT"
+        - "PVT"
+        - "Production"
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How important is this?"
+      options:
+        - "Urgent"
+        - "High"
+        - "Medium"
+        - "Low"
+      default: 2
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context"
+      description: "Links, references, mockups, alternatives considered."
+    validations:
+      required: false

@@ -2,18 +2,7 @@ name: IT Team - Task Tracker
 description: Create and track IT team activities
 
 body:
-  - type: dropdown
-    id: work_type
-    attributes:
-      label: Work Type
-      description: Select the type of work.
-      options:
-        - Task
-        - Bug
-        - Feature
-        - Backlog
-    validations:
-      required: true
+
 
   - type: textarea
     id: description
@@ -54,20 +43,7 @@ body:
       label: Total Holding Days
       value: "0"
 
-  - type: dropdown
-    id: project_name
-    attributes:
-      label: Project Name
-      description: Select the associated project.
-      options:
-        - CMS
-        - RMS
-        - EMS-ISRO
-        - OCPI
-        - FIRMWARE APP
-        - EMS-CLOUD
-    validations:
-      required: true
+
 
   - type: textarea
     id: remarks

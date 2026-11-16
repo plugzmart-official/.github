@@ -12,6 +12,7 @@ body:
         - Bug
         - Task
         - Feature
+        - Backlog
     validations:
       required: true
 
@@ -21,8 +22,7 @@ body:
       label: Description
       description: Enter the detailed task description.
       placeholder: Describe the requirement...
-    validations:
-      required: true
+  
 
   - type: input
     id: start_date
@@ -69,10 +69,10 @@ body:
       options:
         - CMS
         - RMS
-        - EMS
-        - Mobile App
-        - Common
-        - Others
+        - EMS-ISRO
+        - OCPI
+        - FIRMWARE APP
+        - EMS-CLOUD
     validations:
       required: true
 

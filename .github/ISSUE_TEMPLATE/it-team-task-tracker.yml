@@ -31,7 +31,7 @@ body:
       description: Enter the planned start date.
       placeholder: YYYY-MM-DD
     validations:
-      required: true
+      required: false
 
   - type: input
     id: end_date
@@ -40,7 +40,7 @@ body:
       description: Enter the planned completion date.
       placeholder: YYYY-MM-DD
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: hold_details

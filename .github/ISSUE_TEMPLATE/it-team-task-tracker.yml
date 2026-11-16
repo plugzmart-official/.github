@@ -26,20 +26,19 @@ body:
 
   - type: input
     id: start_date
-    attributes:
+   attributes:
       label: Start Date
-      placeholder: DD-MM-YYYY
+      placeholder: YYYY-MM-DD
     validations:
       required: true
 
   - type: input
     id: end_date
     attributes:
-      label: End Date
-      placeholder: DD-MM-YYYY
+      label: Start Date
+      placeholder: YYYY-MM-DD
     validations:
       required: true
-
   - type: textarea
     id: hold_details
     attributes:

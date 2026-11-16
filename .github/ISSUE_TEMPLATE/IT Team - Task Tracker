@@ -1,0 +1,85 @@
+name: IT Team - Task Tracker
+description: Create and track IT team activities
+
+body:
+
+  - type: dropdown
+    id: work_type
+    attributes:
+      label: Work Type
+      description: Select the type of work.
+      options:
+        - Bug
+        - Task
+        - Feature
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Enter the detailed task description.
+      placeholder: Describe the requirement...
+    validations:
+      required: true
+
+  - type: input
+    id: start_date
+    attributes:
+      label: Start Date
+      placeholder: DD-MM-YYYY
+    validations:
+      required: true
+
+  - type: input
+    id: end_date
+    attributes:
+      label: End Date
+      placeholder: DD-MM-YYYY
+    validations:
+      required: true
+
+  - type: textarea
+    id: hold_details
+    attributes:
+      label: Hold Details
+      description: Enter hold details if the task is blocked.
+      value: |
+        Hold Start Date:
+        Hold End Date:
+        Reason:
+    validations:
+      required: false
+
+  - type: input
+    id: total_holding_days
+    attributes:
+      label: Total Holding Days
+      description: Enter the total number of holding days.
+      value: "0"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: project_name
+    attributes:
+      label: Project Name
+      description: Select the associated project.
+      options:
+        - CMS
+        - RMS
+        - EMS
+        - Mobile App
+        - Common
+        - Others
+    validations:
+      required: true
+
+  - type: textarea
+    id: remarks
+    attributes:
+      label: Remarks
+      placeholder: Enter additional remarks...
+    validations:
+      required: false

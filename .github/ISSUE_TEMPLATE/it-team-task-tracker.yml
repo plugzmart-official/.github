@@ -2,7 +2,6 @@ name: IT Team - Task Tracker
 description: Create and track IT team activities
 
 body:
-
   - type: dropdown
     id: work_type
     attributes:
@@ -22,12 +21,14 @@ body:
       label: Description
       description: Enter the detailed task description.
       placeholder: Describe the requirement...
-  
+    validations:
+      required: false
 
   - type: input
     id: start_date
-   attributes:
+    attributes:
       label: Start Date
+      description: Enter the planned start date.
       placeholder: YYYY-MM-DD
     validations:
       required: true
@@ -35,10 +36,12 @@ body:
   - type: input
     id: end_date
     attributes:
-      label: Start Date
+      label: End Date
+      description: Enter the planned completion date.
       placeholder: YYYY-MM-DD
     validations:
       required: true
+
   - type: textarea
     id: hold_details
     attributes:

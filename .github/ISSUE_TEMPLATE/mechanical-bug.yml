@@ -2,11 +2,15 @@ name: "Mechanical Design - Bug Report"
 description: "Report something that is broken or behaving unexpectedly."
 title: "[Mech][Bug]: "
 labels: ["bug"]
+type: Bug
 projects: ["plugzmart-official/12"]
 body:
   - type: markdown
     attributes:
       value: "Thanks for filing this with the **Mechanical Design Team**. This issue is added to the team project automatically."
+  - type: markdown
+    attributes:
+      value: "**Dates:** after creating this issue, set **Start date** and **Target date** in the right sidebar (date picker). Issues without both dates are labelled `needs-dates` and the assignees are pinged."
   - type: textarea
     id: summary
     attributes:

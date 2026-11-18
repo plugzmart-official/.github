@@ -2,11 +2,15 @@ name: "Embedded - Feature Request"
 description: "Propose a new capability or improvement."
 title: "[Embedded][Feature]: "
 labels: ["enhancement"]
+type: Feature
 projects: ["plugzmart-official/11"]
 body:
   - type: markdown
     attributes:
       value: "Thanks for filing this with the **Embedded Team**. This issue is added to the team project automatically."
+  - type: markdown
+    attributes:
+      value: "**Dates:** after creating this issue, set **Start date** and **Target date** in the right sidebar (date picker). Issues without both dates are labelled `needs-dates` and the assignees are pinged."
   - type: textarea
     id: problem
     attributes:
